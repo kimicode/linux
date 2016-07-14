@@ -1,0 +1,87 @@
+#!/bin/bash
+#author:sfzhang
+mkdir -p /software
+cd /software
+wget http://sourceforge.net/projects/opensourcefile/files/Centos_LNMP_v.0.1.tar.gz/download
+if [ $? -eq 0 ]
+  then
+  unzip Centos_LNMP_v.0.1.tar.gz
+  rm -f Centos_LNMP_v.0.1.tar.gz
+else
+  echo "Downloading http://sourceforge.net/projects/opensourcefile/files/Centos_LNMP_v.0.1.tar.gz/download failured!"
+  exit 1
+fi
+
+echo "Installing lnmp depend  packages... "
+sh /software/install_packages.sh
+if [ $? -eq 0 ]
+  then
+    echo "Lnmp depend packages install sucessfull!"
+else
+    echo "Lnmp depend packages install failured!"
+   exit 1
+fi
+
+echo "Installing php library files..."
+sh /software/install_php_lib.sh
+if [ $? -eq 0 ]
+  then
+    echo "PHP library install sucessfull!"
+else
+    echo "PHP library install failured!"
+   exit 1
+fi
+
+echo "Installing mysql,please waitting..."
+sh /software/install_mysql_5.6.sh
+if [ $? -eq 0 ]
+  then
+    echo "mysql install sucessfull!"
+else
+    echo "mysql install failured!"
+   exit 1
+fi
+
+echo "Now Installing php,please waitting..."
+sh /software/install_php_5.3.sh
+if [ $? -eq 0 ]
+  then
+    echo "PHP install sucessfull!"
+else
+    echo "PHP install failured!"
+   exit 1
+fi
+
+echo "Installing php extensions...."
+sh /software/install_php_ext.sh
+if [ $? -eq 0 ]
+  then
+    echo "PHP extensions install sucessfull!"
+else
+    echo "PHP extensions install failured!"
+   exit 1
+fi
+
+echo "Installing nginx....."
+sh /software/install_nginx.sh
+if [ $? -eq 0 ]
+  then
+    echo "Nginx install sucessfull!"
+else
+    echo "Nginx install failured!"
+   exit 1
+fi
+
+
+echo "optimizing the environment of the lnmp!"
+sh /software/install_optimiz.sh
+if [ $? -eq 0 ]
+  then
+    echo "optimizing the environment of the lnmp sucessfull!"
+else
+    echo "optimizing the environment of the lnmp failured!"
+   exit 1
+fi
+
+echo "Congratulations to you,a key installation LNMP is successful!"
+

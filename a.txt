@@ -1,0 +1,61 @@
+1) real time traffic.
+2) traffic and connection overview.
+
+[0;0H[2Jeth0--------Now--------Peak-----------
+[2;1H[KReceive:  240b       240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  240b       240b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  480b       480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  240b       480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  480b       480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  480b       480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  480b       480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  0b         480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  240b       480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  480b       480b                
+[KTransmit: 0b         0b                  
+[0;0H[2;1H[KReceive:  1.9Kb      1.9Kb               
+[KTransmit: 0.9Kb      0.9Kb               
+[0;0H1) real time traffic.
+2) traffic and connection overview.
+
+[0;0H[2Jeth0--------Now--------Peak-----------
+[2;1H[KReceive:  648b       648b                
+[KTransmit: 240b       240b                
+[0;0H[2;1H[KReceive:  0b         648b                
+[KTransmit: 0b         240b                
+[0;0H[2;1H[KReceive:  0b         648b                
+[KTransmit: 0b         240b                
+[0;0H[2;1H[KReceive:  0b         648b                
+[KTransmit: 0b         240b                
+[0;0H
